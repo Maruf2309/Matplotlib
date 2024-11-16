@@ -2,7 +2,7 @@
 Data Visualization
 
 <div align="center">
-      <h1> <img src="#" width="80px"><br/> Numerical Pyton </h1>
+      <h1> <img src="#" width="80px"><br/> Matplotlib </h1>
      </div>
 <p align="center"> <a href="#" target="_blank"><img alt="" src="https://img.shields.io/badge/Website-EA4C89?style=normal&logo=dribbble&logoColor=white" style="vertical-align:center" /></a> <a href="https://twitter.com/nthewindow78505" target="_blank"><img alt="" src="https://img.shields.io/badge/Twitter-1DA1F2?style=normal&logo=twitter&logoColor=white" style="vertical-align:center" /></a> <a href="https://www.facebook.com/maruf.hossain.3958/" target="_blank"><img alt="" src="https://img.shields.io/badge/Facebook-1877F2?style=normal&logo=facebook&logoColor=white" style="vertical-align:center" /></a> <a href="https://www.instagram.com/maruf.hossain.3958/" target="_blank"><img alt="" src="https://img.shields.io/badge/Instagram-E4405F?style=normal&logo=instagram&logoColor=white" style="vertical-align:center" /></a> <a href="https://www.linkedin.com/in/maruf-hossain-682213150/}" target="_blank"><img alt="" src="https://img.shields.io/badge/LinkedIn-0077B5?style=normal&logo=linkedin&logoColor=white" style="vertical-align:center" /></a> </p>
 
@@ -30,13 +30,35 @@ Matplotlib is a comprehensive library for creating static, animated, and interac
   import numpy as
 `Data`
 `x = np.linspace(0, 10, 100)`
-# Plot 
-`plt.figure(figsize=(10, 5))
+
+## Visualizing Data with Matplotlib
+
+This section demonstrates how to create a simple sine wave plot using Matplotlib, a versatile plotting library in Python.
+
+### Prerequisites
+
+Ensure you have `matplotlib` and `numpy` installed:
+
+```bash
+pip install matplotlib numpy
+
+``
+`import matplotlib.pyplot as plt`
+`import numpy as np
+# Data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+# Plot
+plt.figure(figsize=(10, 5))
 plt.plot(x, y, label='Sine Wave', color='blue', linestyle='-')
-plt.xlabel('X-axis') plt.ylabel('Y-axis') 
-plt.title('Example Plot') 
-plt.legend() plt.grid(True) 
-plt.show()
+plt.xlabel('X-axis') plt.ylabel('Y-axis')
+plt.title('Example Plot')
+plt.legend()
+plt.grid(True)
+plt.show()`
+
+
+
 
 # Useful Tips
 - `Customization`: Customize plots using the plt.rcParams to set global plot properties.
